@@ -34,7 +34,7 @@ function Dashboard() {
         // Fetch each friend's data
         const friendsData = await Promise.all(
           user.friends.map((friendId) =>
-            axios.get(`http://localhost:5000/api/auth/users/${friendId}`)
+            axios.get(`https://dashboaard-pro.onrender.com/api/auth/users/${friendId}`)
           )
         );
 
@@ -103,7 +103,7 @@ function Dashboard() {
              
               {user.profilePicture ? (
                       <img
-                        src={`http://localhost:5000/${user.profilePicture}`}
+                        src={`https://dashboaard-pro.onrender.com/${user.profilePicture}`}
                         alt="Profile"
                         className="w-full h-full object-cover rounded-full"
                       />
@@ -191,7 +191,7 @@ function Dashboard() {
                     <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
                     {friend.profilePicture ? (
                       <img
-                        src={`http://localhost:5000/${friend.profilePicture}`}
+                        src={`https://dashboaard-pro.onrender.com/${friend.profilePicture}`}
                         alt="Profile"
                         className="w-full h-full object-cover rounded-full"
                       />
