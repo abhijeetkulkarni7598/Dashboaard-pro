@@ -40,7 +40,7 @@ const Profile = () => {
 
     try {
       const response = await axios.patch(
-        "https://dashboaard-pro.onrender.com/api/auth/update-profile",
+        "https://dashboaard-pro-1-backend.onrender.com/api/auth/update-profile",
         formData,
         {
           headers: {
@@ -101,7 +101,7 @@ const Profile = () => {
             <div className="w-24 h-24 mx-auto rounded-full bg-gray-300 flex items-center justify-center">
            
                     <img
-                      src={`https://dashboaard-pro.onrender.com/${user.profilePicture}`}
+                      src={`https://dashboaard-pro-1-backend.onrender.com/${user.profilePicture}`}
                       alt="Profile"
                       className="w-full h-full object-cover rounded-full"
                     />
