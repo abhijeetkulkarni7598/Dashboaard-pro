@@ -6,7 +6,7 @@ export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async ({ email, password }, { rejectWithValue }) => {
     try {
-      const response = await axios.post("https://dashboaard-pro.onrender.com/api/auth/login", {
+      const response = await axios.post("https://dashboaard-pro-1-backend.onrender.com/api/auth/login", {
         email,
         password,
       });
@@ -27,7 +27,7 @@ export const registerUser = createAsyncThunk(
   "auth/registerUser",
   async ({ name, email, password }, { rejectWithValue }) => {
     try {
-      const response = await axios.post("https://dashboaard-pro.onrender.com/api/auth/register", {
+      const response = await axios.post("https://dashboaard-pro-1-backend.onrender.com/api/auth/register", {
         name,
         email,
         password,
